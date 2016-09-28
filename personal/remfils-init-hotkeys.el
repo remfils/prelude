@@ -16,6 +16,17 @@
 (global-set-key (kbd "C-S-d") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-d") 'mc/mark-all-like-this)
 
+;; undo
+
+;; Unbind Pesky Sleep Button
+(global-unset-key (kbd "C-z"))
+(global-unset-key (kbd "C-x C-z"))
+
+;; Windows Style Undo
+(global-set-key (kbd "C-z") 'undo-tree-undo)
+
+(global-set-key (kbd "C-S-z") 'undo-tree-redo)
+
 ;; funcs
 
 (defun forward-to-word-begin()
