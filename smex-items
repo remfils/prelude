@@ -1,0 +1,16 @@
+
+;; ----- smex-history -----
+(
+ isearch-forward-regexp
+ cd
+ 5x5
+ arp
+ dbx
+ dig
+ erc
+)
+
+;; ----- smex-data -----
+(
+ (isearch-forward-regexp . 1)
+)
