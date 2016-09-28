@@ -1,0 +1,26 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/vlad/.emacs.d/" . "lisp/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/vlad/.emacs.d/lisp/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ 
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/vlad/.emacs.d/lisp/" (22503 42767 185498 478000) "./" "remfils-init-package.el~" "remfils-init-package.el" "remfils-init-keystrokes.el~" "remfils-init-keystrokes.el" "../")
+
+ ("/home/vlad/.emacs.d/" (22503 42666 225558 247000) "./" "backups/" "init.el" "elpa/" "../" "auto-save-list/" "lisp/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
