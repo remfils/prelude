@@ -1,3 +1,5 @@
+(cua-mode t)
+
 (global-set-key (kbd "M-i") 'previous-line) ; was tab-to-tab-stop wasd
 (global-set-key (kbd "M-k") 'next-line) ; was kill-sentence
 (global-set-key (kbd "M-j") 'backward-char) ; was indent-new-comment-line
@@ -7,6 +9,7 @@
 
 (global-set-key (kbd "M-u") 'backward-word)
 (global-set-key (kbd "M-o") 'forward-to-word-begin)
+(define-key prelude-mode-map (kbd "M-o") 'forward-to-word-begin)
 (global-set-key (kbd "M-U") 'backward-to-word-end)
 (global-set-key (kbd "M-O") 'forward-word)
 
@@ -26,6 +29,9 @@
 (global-set-key (kbd "C-z") 'undo-tree-undo)
 
 (global-set-key (kbd "C-S-z") 'undo-tree-redo)
+
+(add-to-list 'prelude-mode-map (let ((map (make-sparse-keymap)))
+                                 (define-key map (kbd "M-o") 'forward-to-word-begin)))
 
 ;; funcs
 
