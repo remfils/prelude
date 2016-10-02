@@ -7,5 +7,8 @@
                             emmet-mode
                             redo+))
 
+(require 'prelude-helm)
+(require 'prelude-helm-everywhere)
+
 (provide 'remfils-packages)
 ;;; remfils-packages.el ends here
