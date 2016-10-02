@@ -30,9 +30,6 @@
 
 (global-set-key (kbd "C-S-z") 'undo-tree-redo)
 
-(add-to-list 'prelude-mode-map (let ((map (make-sparse-keymap)))
-                                 (define-key map (kbd "M-o") 'forward-to-word-begin)))
-
 ;; funcs
 
 (defun forward-to-word-begin()
