@@ -5,7 +5,9 @@
 (prelude-require-packages '(multiple-cursors
                             linum
                             emmet-mode
-                            redo+))
+                            redo+
+                            ggtags
+                            web-mode))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)
