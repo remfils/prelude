@@ -20,32 +20,32 @@
 
 ;;; basic configs
 
-(add-hook
- 'web-mode-hook
- (lambda ()
-   (progn
-     (emmet-mode)
+(defun remfils/web-mode-config-hook ()
+  "Set whitespace to 2 spaces and enable some modes."
+  (emmet-mode)
 
-     (setq web-mode-enable-current-element-highlight t)
+  (setq web-mode-enable-current-element-highlight t)
 
-     (setq web-mode-markup-indent-offset 2)
-     (setq web-mode-css-indent-offset 2)
-     (setq web-mode-code-indent-offset 2))))
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2))
+
+(add-hook 'web-mode-hook 'remfils/web-mode-config-hook)
 
 ;;;; css-mode
-(add-hook
- 'css-mode-hook
- (lambda ()
-   (progn
-     (electric-pair-mode)
-     (setq css-electric-brace-behavior 1)
-     (setq css-indent-offset 2))))
+(defun remfils/css-mode-config-hook ()
+  (electric-pair-mode)
+  (setq css-electric-brace-behavior 1)
+  (setq css-indent-offset 2))
 
+(add-hook 'css-mode-hook 'remfils/css-mode-config-hook)
 
 ;;;; js-mode
+(defun remfils/js-mode-config-hook()
+  (setq js-indent-level 2)
+  (setq-default js2-basic-offset 2))
 
-(setq js-indent-level 2)
-(setq-default js2-basic-offset 2)
+(add-hook 'js-mode-hook 'remfils/js-mode-config-hook)
 
 ;;; hotkeys
 
