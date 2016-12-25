@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: setTimeout
+# key: timeout
+# --
+${1:var ${2:timer} = }setTimeout(function(){
+    $0
+}, ${3:1000});
