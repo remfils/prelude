@@ -9,5 +9,8 @@
 (set-face-attribute 'linum nil :height 100)
 (setq visible-bell 1)
 
+(require 'yasnippet)
+(yas-global-mode 1)
+
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
