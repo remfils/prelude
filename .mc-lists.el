@@ -4,6 +4,11 @@
 (setq mc/cmds-to-run-for-all
       '(
         crux-move-beginning-of-line
+        cua-paste
+        dired-clean-directory
+        emmet-expand-line
+        forward-to-word-begin
+        org-self-insert-command
         sp-backward-delete-char
         ))
 
