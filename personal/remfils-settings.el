@@ -12,5 +12,7 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
+(electric-pair-mode 1)
+
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
