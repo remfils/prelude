@@ -7,8 +7,10 @@
         cua-paste
         dired-clean-directory
         emmet-expand-line
+        eval-print-last-sexp
         forward-to-word-begin
         org-self-insert-command
+        python-indent-dedent-line
         sp-backward-delete-char
         ))
 
