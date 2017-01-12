@@ -10,11 +10,14 @@
 (global-set-key (kbd "M-u") 'backward-word)
 (global-set-key (kbd "M-o") 'forward-to-word-begin)
 (define-key prelude-mode-map (kbd "M-o") 'forward-to-word-begin)
-(define-key c-mode-map (kbd "M-j") 'backward-char)
-(define-key js2-mode-map (kbd "M-j") 'backward-char)
+;(define-key c-mode-map (kbd "M-j") 'backward-char)
+;(define-key js2-mode-map (kbd "M-j") 'backward-char)
 (global-set-key (kbd "M-U") 'backward-to-word-end)
 (global-set-key (kbd "M-O") 'forward-word)
 
+
+(global-set-key (kbd "M-'") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-c C-w") 'ace-window)
 
 ; multy-curs
 (global-set-key (kbd "C-d") 'mc/mark-next-like-this)
