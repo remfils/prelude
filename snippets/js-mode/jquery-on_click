@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: jquery-click
-# key: .click
+# name: jquery-oclick
+# key: .oclick
 # --
-.click(function() {
+.on('click', function() {
                   $0
 })
