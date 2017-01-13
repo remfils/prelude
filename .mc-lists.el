@@ -4,6 +4,7 @@
 (setq mc/cmds-to-run-for-all
       '(
         crux-move-beginning-of-line
+        cua--prefix-override-handler
         cua-paste
         dired-clean-directory
         emmet-expand-line
