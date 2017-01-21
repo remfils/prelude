@@ -15,14 +15,19 @@
 (global-set-key (kbd "M-U") 'backward-to-word-end)
 (global-set-key (kbd "M-O") 'forward-word)
 
-
-(global-set-key (kbd "M-'") 'comment-or-uncomment-region)
+;; this should not be neccecary
+; (global-set-key (kbd "M-'") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-c C-w") 'ace-window)
 
 ; multy-curs
 (global-set-key (kbd "C-d") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-S-d") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-d") 'mc/mark-all-like-this)
+
+;; ace-jump config
+(global-set-key (kbd "C-c SPC") 'ace-jump-word-mode)
+(global-set-key (kbd "C-c C-u SPC") 'ace-jump-char-mod)
+(global-set-key (kbd "C-c C-u C-u SPC") 'ace-jump-line-mode)
 
 ;; undo
 

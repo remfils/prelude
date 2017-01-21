@@ -5,6 +5,7 @@
 (prelude-require-packages '(multiple-cursors
                             linum
                             emmet-mode
+                            ace-jump-mode
                             redo+
                             ggtags
                             web-mode))
