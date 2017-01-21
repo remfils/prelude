@@ -11,6 +11,7 @@
         emmet-expand-line
         eval-print-last-sexp
         forward-to-word-begin
+        org-return-indent
         org-self-insert-command
         python-indent-dedent-line
         sp-backward-delete-char
