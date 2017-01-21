@@ -6,6 +6,7 @@
         crux-move-beginning-of-line
         cua--prefix-override-handler
         cua-paste
+        delete-horizontal-space
         dired-clean-directory
         emmet-expand-line
         eval-print-last-sexp
