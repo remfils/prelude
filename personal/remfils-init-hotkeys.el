@@ -24,11 +24,6 @@
 (global-set-key (kbd "C-S-d") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-d") 'mc/mark-all-like-this)
 
-;; ace-jump config
-(global-set-key (kbd "C-c SPC") 'ace-jump-word-mode)
-(global-set-key (kbd "C-c C-u SPC") 'ace-jump-char-mod)
-(global-set-key (kbd "C-c C-u C-u SPC") 'ace-jump-line-mode)
-
 ;; undo
 
 ;; Unbind Pesky Sleep Button
