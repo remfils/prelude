@@ -15,6 +15,7 @@
         org-self-insert-command
         python-indent-dedent-line
         sp-backward-delete-char
+        sp-backward-kill-word
         ))
 
 (setq mc/cmds-to-run-once
