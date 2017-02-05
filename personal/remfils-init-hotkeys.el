@@ -11,7 +11,6 @@
 (global-set-key (kbd "M-o") 'forward-to-word-begin)
 (define-key prelude-mode-map (kbd "M-o") 'forward-to-word-begin)
 ;(define-key c-mode-map (kbd "M-j") 'backward-char)
-;(define-key js2-mode-map (kbd "M-j") 'backward-char)
 (global-set-key (kbd "M-U") 'backward-to-word-end)
 (global-set-key (kbd "M-O") 'forward-word)
 
@@ -49,6 +48,12 @@
   (backward-word)
   (forward-word))
 
+;; special js hook
+
+(defun remfils/hotkeys-js2-mode-hook ()
+  (define-key js2-mode-map (kbd "M-j") 'backward-char))
+
+(add-hook 'js2-mode-hook 'remfils/hotkeys-js2-mode-hook)
 
 (provide 'remfils-init-hotkeys)
 ;;; remfils-init-hotkeys.el ends here
