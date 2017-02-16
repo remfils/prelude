@@ -8,6 +8,7 @@
         cua-paste
         delete-horizontal-space
         dired-clean-directory
+        electric-pair-delete-pair
         emmet-expand-line
         eval-print-last-sexp
         forward-to-word-begin
