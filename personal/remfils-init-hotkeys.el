@@ -23,6 +23,10 @@
 (global-set-key (kbd "C-S-d") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-d") 'mc/mark-all-like-this)
 
+;; helm swoop
+
+(global-set-key (kbd "C-c C-s") 'helm-swoop)
+
 ;; undo
 
 ;; Unbind Pesky Sleep Button
