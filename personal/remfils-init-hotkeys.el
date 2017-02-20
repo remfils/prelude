@@ -55,5 +55,11 @@
 
 (add-hook 'js2-mode-hook 'remfils/hotkeys-js2-mode-hook)
 
+(defun remfils/hotkeys-diff-mode-hook ()
+  (define-key diff-mode-map (kbd "M-j") 'backward-char)
+  (define-key diff-mode-map (kbd "M-k") 'next-line))
+
+(add-hook 'diff-mode-hook 'remfils/hotkeys-diff-mode-hook)
+
 (provide 'remfils-init-hotkeys)
 ;;; remfils-init-hotkeys.el ends here
