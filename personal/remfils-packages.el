@@ -7,7 +7,8 @@
                             emmet-mode
                             redo+
                             ggtags
-                            web-mode))
+                            web-mode
+                            helm-swoop))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)
