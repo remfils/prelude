@@ -14,5 +14,8 @@
 
 (electric-pair-mode 1)
 
+;; autosave mode off
+(setq auto-save-default nil)
+
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
