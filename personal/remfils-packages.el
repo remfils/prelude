@@ -8,7 +8,8 @@
                             redo+
                             ggtags
                             web-mode
-                            helm-swoop))
+                            helm-swoop
+                            matlab-mode))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)

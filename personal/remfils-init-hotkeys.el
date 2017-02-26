@@ -65,5 +65,10 @@
 
 (add-hook 'diff-mode-hook 'remfils/hotkeys-diff-mode-hook)
 
+(defun remfils/hotkeys-matlab-mode-hook ()
+  (define-key matlab-mode-map (kbd "M-j") 'backward-char))
+
+(add-hook 'matlab-mode-hook 'remfils/hotkeys-matlab-mode-hook)
+
 (provide 'remfils-init-hotkeys)
 ;;; remfils-init-hotkeys.el ends here
