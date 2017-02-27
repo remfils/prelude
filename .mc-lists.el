@@ -5,6 +5,7 @@
       '(
         crux-move-beginning-of-line
         cua--prefix-override-handler
+        cua-cut-region
         cua-paste
         delete-horizontal-space
         dired-clean-directory
