@@ -29,7 +29,9 @@
 
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-css-indent-offset 2)
-  (setq web-mode-code-indent-offset 4))
+  (setq web-mode-code-indent-offset 4)
+
+  (define-key web-mode-map (kbd "C-c C-s") 'helm-swoop))
 
 (add-hook 'web-mode-hook 'remfils/web-mode-config-hook)
 
