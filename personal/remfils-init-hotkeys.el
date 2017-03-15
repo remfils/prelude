@@ -27,6 +27,8 @@
 
 (global-set-key (kbd "C-c C-s") 'helm-swoop)
 
+(global-set-key (kbd "C-c p s w") 'helm-multi-swoop-projectile)
+
 ;; undo
 
 ;; Unbind Pesky Sleep Button
