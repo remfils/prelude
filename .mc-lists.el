@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        backward-to-word-end
         crux-move-beginning-of-line
         cua--prefix-override-handler
         cua-cut-region
@@ -13,13 +14,17 @@
         emmet-expand-line
         eval-print-last-sexp
         forward-to-word-begin
+        kill-region
         org-return-indent
         org-self-insert-command
         python-indent-dedent-line
         sp-backward-delete-char
         sp-backward-kill-word
+        yaml-electric-backspace
+        yaml-electric-dash-and-dot
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        zop-up-to-char
         ))
