@@ -10,7 +10,10 @@
                             ggtags
                             web-mode
                             helm-swoop
-                            matlab-mode))
+                            matlab-mode
+
+                            helm-css-scss
+                            web-beautify))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)
