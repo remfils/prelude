@@ -21,6 +21,13 @@
 
 ;;; basic configs
 
+(defun remfils/php-mode-config-hook()
+  (ggtags-mode 1))
+
+(add-hook 'web-mode-hook 'remfils/php-mode-config-hook)
+
+;; web mode
+
 (defun remfils/web-mode-config-hook ()
   "Set whitespace to 2 spaces and enable some modes."
   (emmet-mode)
@@ -31,7 +38,9 @@
   (setq web-mode-css-indent-offset 2)
   (setq web-mode-code-indent-offset 4)
 
-  (define-key web-mode-map (kbd "C-c C-s") 'helm-swoop))
+  (define-key web-mode-map (kbd "C-c C-s") 'helm-swoop)
+
+  (ggtags-mode 1))
 
 (add-hook 'web-mode-hook 'remfils/web-mode-config-hook)
 
