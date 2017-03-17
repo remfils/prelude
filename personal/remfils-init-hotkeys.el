@@ -26,6 +26,9 @@
 ;; helm swoop
 
 (global-set-key (kbd "C-c C-s") 'helm-swoop)
+(defun remfils/helm-css-hook()
+  (define-key css-mode-map (kbd "C-c C-s") 'helm-css-scss))
+(add-hook 'css-mode-hook 'remfils/helm-css-hook)
 
 (global-set-key (kbd "C-c p s w") 'helm-multi-swoop-projectile)
 
