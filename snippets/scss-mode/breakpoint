@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: breakpoint
+# key: brp
+# --
+@include breakpoint($1) {
+  $0
+}
