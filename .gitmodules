@@ -1,0 +1,3 @@
+[submodule "tomatinho"]
+	path = personal/packages/tomatinho
+	url = git@github.com:remfils/tomatinho.git
