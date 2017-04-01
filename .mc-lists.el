@@ -14,6 +14,7 @@
         emmet-expand-line
         eval-print-last-sexp
         forward-to-word-begin
+        helm-show-kill-ring
         kill-region
         org-return-indent
         org-self-insert-command
