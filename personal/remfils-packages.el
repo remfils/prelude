@@ -24,5 +24,10 @@
 (eval-after-load 'php-mode
   '(require 'php-ext))
 
+
+;; CUSTOM PACKAGES
+
+(load-file "~/.emacs.d/personal/packages/tomatinho/tomatinho.el")
+
 (provide 'remfils-packages)
 ;;; remfils-packages.el ends here
