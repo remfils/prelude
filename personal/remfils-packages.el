@@ -16,7 +16,10 @@
 
                             helm-css-scss
                             web-beautify
-                            material-theme))
+                            material-theme
+
+                            rainbow-delimiters
+                            rainbow-mode))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)

@@ -14,6 +14,8 @@
 
 (electric-pair-mode 1)
 
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+
 ;; autosave mode off
 (setq auto-save-default nil)
 
