@@ -64,7 +64,9 @@
 (defun remfils/css-mode-config-hook ()
   (electric-pair-mode)
   (setq css-electric-brace-behavior 1)
-  (setq css-indent-offset 2))
+  (setq css-indent-offset 2)
+  
+  (rainbow-mode))
 
 (add-hook 'css-mode-hook 'remfils/css-mode-config-hook)
 
