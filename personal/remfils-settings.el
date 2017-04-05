@@ -17,5 +17,9 @@
 ;; autosave mode off
 (setq auto-save-default nil)
 
+;; theme
+;; (disable-theme 'zenburn)
+;; (load-theme 'material t)
+
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here

@@ -19,9 +19,9 @@
 (global-set-key (kbd "C-c C-w") 'ace-window)
 
 ; multy-curs
-(global-set-key (kbd "C-d") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-S-d") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-d") 'mc/mark-all-like-this)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C->") 'mc/mark-all-like-this)
 
 ;; helm swoop
 

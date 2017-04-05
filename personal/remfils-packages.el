@@ -15,7 +15,8 @@
                             js2-mode
 
                             helm-css-scss
-                            web-beautify))
+                            web-beautify
+                            material-theme))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)
