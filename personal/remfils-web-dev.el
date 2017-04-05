@@ -30,6 +30,18 @@
 
 ;; web mode
 
+;;; select attribute text
+
+(defun remfils/web-mode-content-select()
+  (interactive)
+  (web-mode-attribute-beginning)
+  (skip-chars-forward "a-zA-Z=")
+  (forward-char 1)
+                                        ;(push-mark)
+  (set-mark-command nil)
+  (skip-chars-forward "a-zA-Z0-9 _\-")
+  (setq deactivate-mark nil))
+
 (defun remfils/web-mode-config-hook ()
   "Set whitespace to 2 spaces and enable some modes."
   (emmet-mode)
@@ -41,6 +53,8 @@
   (setq web-mode-code-indent-offset 4)
 
   (define-key web-mode-map (kbd "C-c C-s") 'helm-swoop)
+  (define-key web-mode-map (kbd "C-c C-a a") 'remfils/web-mode-content-select)
+  
 
   (ggtags-mode 1))
 
@@ -62,6 +76,7 @@
 (add-hook 'js-mode-hook 'remfils/js-mode-config-hook)
 
 ;;; hotkeys
+
 
 
 (provide 'remfils-web-dev)
