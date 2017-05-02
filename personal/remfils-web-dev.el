@@ -39,7 +39,7 @@
   (forward-char 1)
                                         ;(push-mark)
   (set-mark-command nil)
-  (skip-chars-forward "a-zA-Z0-9 _\-")
+  (skip-chars-forward "a-zA-Z0-9 _-:\/{}()")
   (setq deactivate-mark nil))
 
 (defun remfils/web-mode-config-hook ()
@@ -50,7 +50,7 @@
 
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-css-indent-offset 2)
-  (setq web-mode-code-indent-offset 4)
+  (setq web-mode-code-indent-offset 2)
 
   (define-key web-mode-map (kbd "C-c C-s") 'helm-swoop)
   (define-key web-mode-map (kbd "C-c C-a a") 'remfils/web-mode-content-select)
