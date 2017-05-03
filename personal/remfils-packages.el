@@ -19,8 +19,7 @@
                             material-theme
 
                             rainbow-delimiters
-                            rainbow-mode
-                            multi-term))
+                            rainbow-mode))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)
