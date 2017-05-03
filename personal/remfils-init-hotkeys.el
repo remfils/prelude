@@ -43,10 +43,6 @@
 
 (global-set-key (kbd "C-S-z") 'undo-tree-redo)
 
-;; multi-term
-
-(global-set-key (kbd "C-x M-m") 'multi-term)
-
 ;; funcs
 
 (defun forward-to-word-begin()
