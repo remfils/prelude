@@ -25,5 +25,7 @@
 ;; (disable-theme 'zenburn)
 ;; (load-theme 'material t)
 
+(setq neo-theme 'icons)
+
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
