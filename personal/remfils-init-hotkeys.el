@@ -23,6 +23,8 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C->") 'mc/mark-all-like-this)
 
+(global-set-key (kbd "<f8>") 'neotree-toggle)
+
 ;; helm swoop
 
 (global-set-key (kbd "C-c C-s") 'helm-swoop)
