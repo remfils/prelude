@@ -4,6 +4,8 @@
 (setq mc/cmds-to-run-for-all
       '(
         backward-to-word-end
+        c-electric-paren
+        c-electric-semi&comma
         crux-move-beginning-of-line
         cua--prefix-override-handler
         cua-cut-region
