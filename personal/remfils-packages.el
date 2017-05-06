@@ -20,7 +20,8 @@
 
                             rainbow-delimiters
                             rainbow-mode
-                            neotree))
+                            neotree
+                            all-the-icons))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)
