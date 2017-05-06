@@ -16,6 +16,8 @@
 
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
+(scroll-bar-mode -1)
+
 ;; autosave mode off
 (setq auto-save-default nil)
 

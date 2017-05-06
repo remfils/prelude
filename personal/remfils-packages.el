@@ -19,7 +19,8 @@
                             material-theme
 
                             rainbow-delimiters
-                            rainbow-mode))
+                            rainbow-mode
+                            neotree))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)
