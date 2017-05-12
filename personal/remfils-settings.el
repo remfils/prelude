@@ -21,6 +21,9 @@
 ;; autosave mode off
 (setq auto-save-default nil)
 
+; stop creating backup~ files
+(setq make-backup-files nil)
+
 ;; theme
 ;; (disable-theme 'zenburn)
 ;; (load-theme 'material t)
