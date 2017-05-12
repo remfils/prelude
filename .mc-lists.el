@@ -6,8 +6,10 @@
         backward-to-word-end
         c-electric-paren
         c-electric-semi&comma
+        c-electric-slash
         crux-move-beginning-of-line
         cua--prefix-override-handler
+        cua-copy-region
         cua-cut-region
         cua-paste
         delete-horizontal-space
@@ -20,6 +22,7 @@
         helm-show-kill-ring
         indent-for-tab-command
         kill-region
+        org-delete-char
         org-return-indent
         org-self-insert-command
         python-indent-dedent-line
