@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: include_respond-to
+# key: @irt
+# --
+@include respond-to($1) {
+  $0
+}
