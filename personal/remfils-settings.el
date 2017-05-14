@@ -30,5 +30,10 @@
 
 (setq neo-theme 'icons)
 
+;; projectile settings
+
+(add-to-list 'projectile-globally-ignored-directories "node_modules")
+(add-to-list 'projectile-globally-ignored-directories "vendor")
+
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
