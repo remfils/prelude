@@ -19,10 +19,12 @@
         emmet-expand-line
         eval-print-last-sexp
         forward-to-word-begin
+        helm-M-x
         helm-show-kill-ring
         indent-for-tab-command
         kill-region
         org-delete-char
+        org-end-of-line
         org-return-indent
         org-self-insert-command
         python-indent-dedent-line
