@@ -10,7 +10,9 @@
 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline (concat org-directory "/t.org") "Tasks")
-         "* TODO %?\n  %i\n  %a")
+         "* TODO %?\n %T\n %a")
+        ("w" "Todo work" entry (file+headline (concat org-directory "/t.org") "Work")
+         "* TODO %?\n %T\n %a")
         ("j" "Journal" entry (file+datetree (concat org-directory "/j.org"))
          "* %T\n%?")
         ("l" "Local journal" entry (file+datetree (concat org-directory "/local-j.org"))
