@@ -22,7 +22,7 @@
  'org-babel-load-languages '((sh . t) (python . t) (perl . t)))
 
 
-(defun remfils/commit-and-push-org-chanhes()
+(defun remfils/commit-and-push-org-changes()
   "This function updates repo at org-directory and pushes new changes"
   (interactive)
   (shell-command (concat "cd " org-directory " && git stash && git pull && git stash pop && git commit -am '++' && git push")))
