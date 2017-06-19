@@ -21,6 +21,9 @@
 (org-babel-do-load-languages
  'org-babel-load-languages '((sh . t) (python . t) (perl . t)))
 
+(setq org-odt-category-map-alist
+      '(("__Figure__" "Изображение" "value" "Изображение" org-odt--enumerable-image-p)))
+
 
 (defun remfils/run-git-commands-on-repo (repo-dir commands)
   (let ((default-directory repo-dir)
