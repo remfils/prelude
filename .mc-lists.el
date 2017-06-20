@@ -25,6 +25,8 @@
         kill-region
         org-delete-char
         org-end-of-line
+        org-kill-line
+        org-metaright
         org-return-indent
         org-self-insert-command
         python-indent-dedent-line
