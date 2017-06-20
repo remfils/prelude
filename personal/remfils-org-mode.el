@@ -9,9 +9,7 @@
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline (concat org-directory "/t.org") "Tasks")
-         "* TODO %?\n %T\n %a")
-        ("w" "Todo work" entry (file+headline (concat org-directory "/t.org") "Work")
+      '(("t" "Todo" entry (file+headline (concat org-directory "/t.org") "Общее")
          "* TODO %?\n %T\n %a")
         ("j" "Journal" entry (file+datetree (concat org-directory "/j.org"))
          "* %T\n%?")
