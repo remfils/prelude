@@ -20,9 +20,17 @@
 
 ;; autosave mode off
 (setq auto-save-default nil)
+(setq create-lockfiles nil)
 
 ; stop creating backup~ files
 (setq make-backup-files nil)
+
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+(setq gnus-dribble-directory
+      `((".*" ,temporary-file-directory t)))
 
 ;; theme
 ;; (disable-theme 'zenburn)
