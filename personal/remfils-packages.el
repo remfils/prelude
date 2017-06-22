@@ -21,7 +21,9 @@
                             rainbow-delimiters
                             rainbow-mode
                             neotree
-                            all-the-icons))
+                            all-the-icons
+
+                            csharp-mode))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)
