@@ -23,7 +23,11 @@
                             neotree
                             all-the-icons
 
-                            csharp-mode))
+                            csharp-mode
+
+                            company
+                            company-php
+                            company-web))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)
