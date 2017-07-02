@@ -35,4 +35,19 @@
   (interactive)
   (remfils/run-git-commands-on-repo "~/.org" '("stash" "pull" "stash pop" "commit -am \"++\"" "push")))
 
+
+
+(defun remfils/group-lines-to-elisp-list ()
+  "creates a elisp list of strings from lines in region"
+  (interactive)
+  (if (use-region-p)
+      (let ((lines (split-string (buffer-substring (region-beginning) (region-end)) "\n")))
+        (insert "\n(setq list-name '(")
+        (mapcar (lambda (x)
+                  (insert
+                   (format "\"%s\"\n" (replace-regexp-in-string "\"" "\\\"" x))))
+                lines)
+        (insert "))\n"))
+    (insert "(setq list-name '())")))
+
 ;;; remfils-org-mode.el ends here
