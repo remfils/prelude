@@ -12,6 +12,8 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
+(global-company-mode)
+
 (electric-pair-mode 1)
 
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
