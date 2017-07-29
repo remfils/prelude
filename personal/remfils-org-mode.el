@@ -50,4 +50,16 @@
         (insert "))\n"))
     (insert "(setq list-name '())")))
 
+(global-set-key (kbd "M-Q") 'unfill-paragraph)
+
+(defun unfill-paragraph ()
+  (interactive)
+  (let ((fill-column (point-max)))
+    (fill-paragraph nil)))
+
+(defun unfill-region ()
+  (interactive)
+  (let ((fill-column (point-max)))
+    (fill-region (region-beginning) (region-end) nil)))
+
 ;;; remfils-org-mode.el ends here
