@@ -4,6 +4,7 @@
 (setq mc/cmds-to-run-for-all
       '(
         backward-to-word-end
+        c-electric-brace
         c-electric-paren
         c-electric-semi&comma
         c-electric-slash
