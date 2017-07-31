@@ -27,7 +27,8 @@
 
                             company
                             company-php
-                            company-web))
+                            company-web
+                            ledger-mode))
 
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)
