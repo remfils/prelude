@@ -45,5 +45,10 @@
 (add-to-list 'projectile-globally-ignored-directories "node_modules")
 (add-to-list 'projectile-globally-ignored-directories "vendor")
 
+(add-hook 'hack-local-variables-hook 'run-local-vars-mode-hook)
+(defun run-local-vars-mode-hook ()
+  "Run a hook for the major-mode after the local variables have been processed."
+  (run-hooks (intern (concat (symbol-name major-mode) "-local-vars-hook"))))
+
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
