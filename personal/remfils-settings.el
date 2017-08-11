@@ -50,5 +50,9 @@
   "Run a hook for the major-mode after the local variables have been processed."
   (run-hooks (intern (concat (symbol-name major-mode) "-local-vars-hook"))))
 
+(setq
+ whitespace-style
+ '(face tabs spaces trailing lines space-before-tab newline indentation space-after-tab space-mark tab-mark newline-mark))
+
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
