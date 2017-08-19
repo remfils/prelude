@@ -1,4 +1,4 @@
-(cua-mode t)
+;; (cua-mode t)
 
 ;; (global-set-key (kbd "M-i") 'previous-line) ; was tab-to-tab-stop wasd
 (global-set-key (kbd "M-k") 'next-line) ; was kill-sentence
