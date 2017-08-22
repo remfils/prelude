@@ -16,7 +16,6 @@
 
                             helm-css-scss
                             web-beautify
-                            material-theme
 
                             rainbow-delimiters
                             rainbow-mode
