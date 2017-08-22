@@ -16,6 +16,8 @@
 
 (electric-pair-mode 1)
 
+(setq shift-select-mode nil)
+
 (add-hook 'prog-mode-hook 'remfils/prog-mode-hook)
 (defun remfils/prog-mode-hook ()
   (rainbow-delimiters-mode)
