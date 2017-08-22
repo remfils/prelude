@@ -16,16 +16,19 @@
 
 (electric-pair-mode 1)
 
-(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'prog-mode-hook 'remfils/prog-mode-hook)
+(defun remfils/prog-mode-hook ()
+  (rainbow-delimiters-mode)
+  (ggtags-mode))
 
 (scroll-bar-mode -1)
 
 ;; autosave mode off
-(setq auto-save-default nil)
-(setq create-lockfiles nil)
+(setq auto-save-default t)
+(setq create-lockfiles t)
 
 ; stop creating backup~ files
-(setq make-backup-files nil)
+(setq make-backup-files t)
 
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
@@ -50,9 +53,9 @@
   "Run a hook for the major-mode after the local variables have been processed."
   (run-hooks (intern (concat (symbol-name major-mode) "-local-vars-hook"))))
 
-(setq
- whitespace-style
- '(face tabs spaces trailing lines space-before-tab newline indentation space-after-tab space-mark tab-mark newline-mark))
+;(setq
+; whitespace-style
+; '(face tabs spaces trailing lines space-before-tab newline indentation space-after-tab space-mark tab-mark newline-mark))
 
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
