@@ -55,11 +55,6 @@
   "Run a hook for the major-mode after the local variables have been processed."
   (run-hooks (intern (concat (symbol-name major-mode) "-local-vars-hook"))))
 
-(defun remfils/projectile-grep-russian-words ()
-  (interactive)
-  (let ((russian-word-regexp "[А-Яа-я]\\{1,\\}"))
-    (projectile-grep russian-word-regexp)))
-
 ;(setq
 ; whitespace-style
 ; '(face tabs spaces trailing lines space-before-tab newline indentation space-after-tab space-mark tab-mark newline-mark))
