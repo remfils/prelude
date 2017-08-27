@@ -22,8 +22,10 @@
         forward-to-word-begin
         helm-M-x
         helm-show-kill-ring
+        ignore
         indent-for-tab-command
         kill-region
+        org-cycle
         org-delete-char
         org-end-of-line
         org-kill-line
