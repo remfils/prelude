@@ -42,5 +42,6 @@
 
 (setq mc/cmds-to-run-once
       '(
+        helm-buffers-list
         zop-up-to-char
         ))
