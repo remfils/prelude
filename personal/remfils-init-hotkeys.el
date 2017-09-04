@@ -97,6 +97,16 @@
 
 (add-hook 'matlab-mode-hook 'remfils/hotkeys-matlab-mode-hook)
 
+;; avy fix
+
+(defun remfils/avy-goto-word-or-subword-1 (arg char)
+  (interactive "P\ncchar:")
+  (if arg
+      (avy-goto-subword-1 char)
+    (avy-goto-word-1 char)))
+
+(global-set-key (kbd "C-c j") 'remfils/avy-goto-word-or-subword-1)
+
 
 
 ;; evaluation function
