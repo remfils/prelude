@@ -97,3 +97,5 @@ Also refontify when necessary."
                          (max refontify (point)))
         (font-lock-flush ostart (overlay-end whitespace-point--used))
         (delete-overlay whitespace-point--used))))))
+
+(provide 'remfils-overrides)

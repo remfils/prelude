@@ -6,3 +6,5 @@
 (eval-after-load 'tex
   '(add-to-list 'TeX-view-program-selection
                 '(output-pdf "mupdf")))
+
+(provide 'remfils-tex)
