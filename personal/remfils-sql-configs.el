@@ -14,3 +14,5 @@
                         (sql-user "root")
                         (sql-database "SciencedaysDB"))
         )))
+
+(provide 'remfils-sql-configs)
