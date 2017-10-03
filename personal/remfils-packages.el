@@ -11,6 +11,7 @@
                             web-mode
                             php-mode
                             helm-swoop
+                            helm-projectile
                             matlab-mode
                             js2-mode
 
