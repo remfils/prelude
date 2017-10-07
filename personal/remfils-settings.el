@@ -11,7 +11,9 @@
 
 (yas-global-mode 1)
 
-(global-company-mode)
+(add-hook 'after-init-hook 'global-company-mode)
+(setq company-idle-delay 0.1)
+; (global-company-mode)
 
 (electric-pair-mode 1)
 
