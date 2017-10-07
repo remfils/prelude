@@ -24,6 +24,7 @@
                             all-the-icons
 
                             csharp-mode
+                            omnisharp
 
                             company
                             company-php

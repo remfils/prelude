@@ -61,6 +61,10 @@
  whitespace-style
  '(face tabs spaces trailing lines space-before-tab indentation space-after-tab space-mark tab-mark))
 
+(add-hook 'csharp-mode-hook 'omnisharp-mode)
+(eval-after-load
+    'company
+  '(add-to-list 'company-backends 'company-omnisharp))
 
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
