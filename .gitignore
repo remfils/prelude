@@ -25,4 +25,7 @@ games/
 .emacs.desktop
 .emacs.desktop.lock
 network-security.data
+
+# omnisharp
 .cache/
+.omnisharp/1.*/*

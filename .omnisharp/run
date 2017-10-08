@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mono /home/vlad/.emacs.d/.omnisharp/1.24/OmniSharp.exe "$@"
