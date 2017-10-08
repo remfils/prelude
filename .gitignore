@@ -25,3 +25,4 @@ games/
 .emacs.desktop
 .emacs.desktop.lock
 network-security.data
+.cache/
