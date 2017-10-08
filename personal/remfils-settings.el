@@ -11,7 +11,7 @@
 
 (yas-global-mode 1)
 
-(global-company-mode)
+(add-hook 'prog-mode-hook company-mode)
 
 (electric-pair-mode 1)
 
