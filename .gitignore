@@ -29,3 +29,4 @@ prelude-cheatsheet.aux
 prelude-cheatsheet.log
 games/
 .cache/
+.omnisharp/1.*/*
