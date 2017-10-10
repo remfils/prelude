@@ -10,4 +10,4 @@
 
 (add-hook 'ledger-mode-hook 'remfils/ledger-mode-hook)
 
-(provide remfils-ledger)
+(provide 'remfils-ledger)
