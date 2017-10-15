@@ -68,13 +68,6 @@
 
 ;; company mode
 
-(setq
- ;; never start auto-completion unless I ask for it
- company-idle-delay 0.1
- ;; autocomplete right after '.'
- company-minimum-prefix-length 0
- ;; remove echo delay
- company-echo-delay 0)
 
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
