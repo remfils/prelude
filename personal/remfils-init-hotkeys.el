@@ -122,6 +122,7 @@
 
 (global-set-key (kbd "C-c C-e") 'remfils/eval-and-replace)
 
+(global-set-key (kbd "<backtab>") 'company-complete-common)
 
 (provide 'remfils-init-hotkeys)
 ;;; remfils-init-hotkeys.el ends here
