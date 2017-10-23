@@ -32,6 +32,7 @@
         org-metaright
         org-return-indent
         org-self-insert-command
+        org-time-stamp
         org-yank
         python-indent-dedent-line
         sp-backward-delete-char
