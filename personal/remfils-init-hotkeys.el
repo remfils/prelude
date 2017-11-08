@@ -125,7 +125,7 @@
 (global-set-key (kbd "<backtab>") 'company-complete-common)
 
 (defun remfils/omnisharp-keys-hook ()
-  (define-key csharp-mode-map (kbd "M-<f12>") 'omnisharp-go-to-definition))
+  (define-key csharp-mode-map (kbd "<f12>") 'omnisharp-go-to-definition))
 (add-hook 'csharp-mode-hook 'remfils/omnisharp-keys-hook)
 
 (provide 'remfils-init-hotkeys)
