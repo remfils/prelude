@@ -8,6 +8,9 @@
         c-electric-paren
         c-electric-semi&comma
         c-electric-slash
+        c-electric-star
+        comment-dwim
+        company-complete-common
         crux-move-beginning-of-line
         cua--prefix-override-handler
         cua-copy-region
@@ -39,10 +42,12 @@
         sp-backward-kill-word
         yaml-electric-backspace
         yaml-electric-dash-and-dot
+        yas-expand
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        end-of-buffer
         helm-buffers-list
         zop-up-to-char
         ))
