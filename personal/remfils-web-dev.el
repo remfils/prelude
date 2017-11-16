@@ -7,6 +7,7 @@
 ;;; auto mode
 
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-jsx-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
@@ -74,7 +75,8 @@
 ;;;; js-mode
 (defun remfils/js-mode-config-hook()
   (setq js-indent-level 2)
-  (setq-default js2-basic-offset 2))
+  (setq-default js2-basic-offset 2)
+  (ac-js2-mode))
 
 (add-hook 'js-mode-hook 'remfils/js-mode-config-hook)
 
