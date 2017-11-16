@@ -19,6 +19,7 @@
         cua-paste
         delete-horizontal-space
         dired-clean-directory
+        downcase-region
         electric-newline-and-maybe-indent
         electric-pair-delete-pair
         emmet-expand-line
