@@ -25,6 +25,7 @@
 
                             csharp-mode
                             omnisharp
+                            indium
 
                             company
                             company-php
