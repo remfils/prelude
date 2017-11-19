@@ -32,3 +32,4 @@ games/
 # omnisharp
 .cache/
 .omnisharp/1.*/*
+/indium-workspaces.el
