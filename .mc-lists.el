@@ -30,6 +30,7 @@
         ignore
         indent-for-tab-command
         kill-region
+        nxml-electric-slash
         org-cycle
         org-delete-char
         org-end-of-line
