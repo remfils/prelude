@@ -33,6 +33,10 @@
                             ledger-mode
                             yasnippet))
 
+;; packages that could be installed locally
+;;
+;; - org-redmine
+
 (require 'prelude-helm)
 (require 'prelude-helm-everywhere)
 (require 'prelude-web)
