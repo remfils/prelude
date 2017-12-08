@@ -48,6 +48,7 @@
 ;; CUSTOM PACKAGES
 
 (load-file "~/.emacs.d/personal/packages/remfils-templater.el")
+(load-file "~/.emacs.d/personal/packages/remfils-redmine.el")
 
 (provide 'remfils-packages)
 ;;; remfils-packages.el ends here
