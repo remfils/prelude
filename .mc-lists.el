@@ -20,6 +20,7 @@
         delete-horizontal-space
         dired-clean-directory
         downcase-region
+        easy-kill
         electric-newline-and-maybe-indent
         electric-pair-delete-pair
         emmet-expand-line
