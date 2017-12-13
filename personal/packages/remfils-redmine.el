@@ -1,3 +1,5 @@
+(require 'org-redmine)
+
 (defun org-redmine-helm-show-issue-all (&optional me)
   "Display recent issues using `helm'"
   (interactive "P")
