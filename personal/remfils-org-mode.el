@@ -2,6 +2,22 @@
 ;;; Commentary:
 ;;; Code:
 
+
+;; AGENDA
+
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+
+(setq org-agenda-files
+      (list "documents/org/tasks.org"))
+
+(setq cloud-path "/media/D/Downloads/YandexDisk/")
+(when (equal system-type 'windows-nt)
+  (setq cloud-path "d:/Downloads/YandexDisk/"))
+(setq org-agenda-files (mapcar '(lambda (x) (concat cloud-path x)) org-agenda-files))
+
+;; CAPTURE
+
 (global-set-key (kbd "C-c c") 'org-capture)
 
 (setq org-directory "~/.org")
