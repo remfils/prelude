@@ -7,16 +7,25 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/media/D/OSPanel/domains/ksuart.d8/themes/ksuart/templates/layout/"
+ "/sudo:root@hp-pav-laptop:/etc/apache2/sites-available/"
  "/home/vlad/.emacs.d/lisp/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- 
+ "page--front.html.twig"
+ "ksuart.d8.conf"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/media/D/OSPanel/domains/ksuart.d8/themes/ksuart/templates/layout/" (23118 1534 0 0) "region.html.twig" "region--header.html.twig" "region--footer.html.twig" "page.html.twig" "page--front.html.twig" "maintenance-page.html.twig" "html.html.twig" "../" "./")
+
+ ("/home/remfils/Documents/Ledger/" (23117 16910 683913 200000) "total.sm" "plot.sh" "ledgerout.tmp" "ledger.tmp" "ledger.org" "doc.org" "../" "./")
+
+ ("/home/remfils/Documents/Postgrad__003/eng/" (23096 15601 190835 500000) "vocab.org" "pereskokov__keywords.odt" "pereskokov__keywords.doc" "pereskokov_V_S__keywords.odt" "Olaf_Stenzel_auth._The_Physics_of_Thin_Film_Optical_Spectra_An_Introduction.pdf" "Leiva_Casemiro_Oliveira,_Antonio_Marcus_Nogueira_Lima,_Carsten_Thirstrup,_Helmut_Franz_Neff_auth._Surface_Plasmon_Resonance_Sensors_A_Materials_Guide_to_Design_and_Optimization.pdf" "doc.org" "doc.odt" ".~lock.doc.odt#" "../" "./")
+
  ("/home/vlad/.emacs.d/lisp/" (22503 42767 185498 478000) "./" "remfils-init-package.el~" "remfils-init-package.el" "remfils-init-keystrokes.el~" "remfils-init-keystrokes.el" "../")
 
  ("/home/vlad/.emacs.d/" (22503 42666 225558 247000) "./" "backups/" "init.el" "elpa/" "../" "auto-save-list/" "lisp/")

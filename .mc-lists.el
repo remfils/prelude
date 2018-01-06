@@ -35,10 +35,13 @@
         org-cycle
         org-delete-char
         org-end-of-line
+        org-force-self-insert
         org-kill-line
+        org-meta-return
         org-metaright
         org-return-indent
         org-self-insert-command
+        org-shiftright
         org-time-stamp
         org-yank
         python-indent-dedent-line
