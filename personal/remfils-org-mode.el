@@ -2,6 +2,13 @@
 ;;; Commentary:
 ;;; Code:
 
+(setq org-file-apps
+      '((auto-mode . emacs)
+        ("\\.mm\\'" . default)
+        ("\\.x?html?\\'" . default)
+        ;; open links in okular
+        ("\\.pdf\\'" . "application/pdf; okular %s")))
+
 
 ;; AGENDA
 
