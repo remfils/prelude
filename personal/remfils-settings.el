@@ -75,6 +75,8 @@
 
 ;; company mode
 
+;; edit-server is an app to edit textareas in firefox
+(edit-server-start)
 
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
