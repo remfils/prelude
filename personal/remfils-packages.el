@@ -27,6 +27,10 @@
                             omnisharp
                             indium
 
+                            ;; requires firefox "Edit with Emacs" extension
+                            edit-server
+                            edit-server-htmlize
+
                             company
                             company-php
                             company-web
