@@ -84,7 +84,10 @@
 ;; special js hook
 
 (defun remfils/hotkeys-js2-mode-hook ()
-  (define-key js2-mode-map (kbd "M-j") 'backward-char))
+  (define-key js2-mode-map (kbd "M-j") 'backward-char)
+  (define-key js2-mode-map (kbd "C-c C-p") 'js-comint-repl)
+  (define-key js2-mode-map (kbd "C-c C-r") 'js-comint-send-region)
+  (define-key js2-mode-map (kbd "C-c C-c") 'js-comint-send-buffer))
 
 (add-hook 'js2-mode-hook 'remfils/hotkeys-js2-mode-hook)
 
