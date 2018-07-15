@@ -14,6 +14,7 @@
                             helm-projectile
                             matlab-mode
                             js2-mode
+                            js-comint
 
                             helm-css-scss
                             web-beautify

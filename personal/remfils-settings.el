@@ -82,7 +82,7 @@
 (define-minor-mode disable-mouse-mode
   "A minor-mode that disables all mouse keybinds."
   :global t
-  :lighter " 🐭"
+  :lighter " -M-"
   :keymap (make-sparse-keymap))
 
 (dolist (type '(mouse down-mouse drag-mouse
@@ -93,6 +93,10 @@
       (let ((k (format "%s%s-%s" prefix type n)))
         (define-key disable-mouse-mode-map
           (vector (intern k)) #'ignore)))))
+
+;; python cyrylic in term fix
+(when (equal system-type 'windows-nt)
+  (setenv "PYTHONIOENCODING" "utf-8"))
 
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
