@@ -2,6 +2,9 @@
 
 (global-set-key (kbd "C-<tab>") 'yas/expand)
 
+(global-set-key (kbd "<f12>") 'omnisharp-go-to-definition)
+(global-set-key (kbd "S-<f12>") 'omnisharp-go-to-definition-other-window)
+
 ;; (global-set-key (kbd "M-i") 'previous-line) ; was tab-to-tab-stop wasd
 (global-set-key (kbd "M-k") 'next-line) ; was kill-sentence
 (global-set-key (kbd "M-j") 'backward-char) ; was indent-new-comment-line
