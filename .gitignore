@@ -28,6 +28,11 @@ network-security.data
 
 /server/*
 
+prelude-cheatsheet.el
+prelude-cheatsheet.aux
+prelude-cheatsheet.log
+games/
+/server/*
 # omnisharp
 .cache/
 .omnisharp/1.*/*
