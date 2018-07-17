@@ -6,7 +6,7 @@
                             linum
                             emmet-mode
                             yaml-mode
-                            redo+
+;                            redo+
                             ggtags
                             web-mode
                             php-mode
@@ -55,7 +55,7 @@
 (load-file "~/.emacs.d/personal/packages/remfils-templater.el")
 ;; (load-file "~/.emacs.d/personal/packages/remfils-redmine.el")
 
-(load-file "~/.emacs.d/personal/packages/remfils-exwm.el")
+;; (load-file "~/.emacs.d/personal/packages/remfils-exwm.el")
 
 (provide 'remfils-packages)
 ;;; remfils-packages.el ends here
