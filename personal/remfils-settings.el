@@ -98,5 +98,8 @@
 (when (equal system-type 'windows-nt)
   (setenv "PYTHONIOENCODING" "utf-8"))
 
+;; company delay
+(setq company-idle-delay 0.1)
+
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
