@@ -20,7 +20,9 @@
 (add-hook 'prog-mode-hook 'remfils/prog-mode-hook)
 (defun remfils/prog-mode-hook ()
   (rainbow-delimiters-mode)
-  (ggtags-mode))
+  ;; (ggtags-mode)
+  (flycheck-mode)
+  )
 
 (scroll-bar-mode -1)
 
