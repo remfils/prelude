@@ -2,22 +2,19 @@
 
 (global-set-key (kbd "C-<tab>") 'yas/expand)
 
-(global-set-key (kbd "<f12>") 'omnisharp-go-to-definition)
-(global-set-key (kbd "S-<f12>") 'omnisharp-go-to-definition-other-window)
-
 ;; (global-set-key (kbd "M-i") 'previous-line) ; was tab-to-tab-stop wasd
-(global-set-key (kbd "M-k") 'next-line) ; was kill-sentence
-(global-set-key (kbd "M-j") 'backward-char) ; was indent-new-comment-line
-(global-set-key (kbd "M-l") 'forward-char)
+;; (global-set-key (kbd "M-k") 'next-line) ; was kill-sentence
+;; (global-set-key (kbd "M-j") 'backward-char) ; was indent-new-comment-line
+;; (global-set-key (kbd "M-l") 'forward-char)
 (global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-]") 'forward-paragraph)
 
-(global-set-key (kbd "M-u") 'backward-word)
-(global-set-key (kbd "M-o") 'forward-to-word-begin)
-(define-key prelude-mode-map (kbd "M-o") 'forward-to-word-begin)
+;; (global-set-key (kbd "M-u") 'backward-word)
+;; (global-set-key (kbd "M-o") 'forward-to-word-begin)
+;; (define-key prelude-mode-map (kbd "M-o") 'forward-to-word-begin)
 ;(define-key c-mode-map (kbd "M-j") 'backward-char)
-(global-set-key (kbd "M-U") 'backward-to-word-end)
-(global-set-key (kbd "M-O") 'forward-word)
+;; (global-set-key (kbd "M-U") 'backward-to-word-end)
+;; (global-set-key (kbd "M-O") 'forward-word)
 
 ;; this should not be neccecary
 ; (global-set-key (kbd "M-'") 'comment-or-uncomment-region)
@@ -32,9 +29,9 @@
 
 ;; helm swoop
 
-(global-set-key (kbd "C-c C-s") 'helm-swoop)
-(defun remfils/helm-css-hook()
-  (define-key css-mode-map (kbd "C-c C-s") 'helm-css-scss))
+;; (global-set-key (kbd "C-c C-s") 'helm-swoop)
+;; (defun remfils/helm-css-hook()
+;;   (define-key css-mode-map (kbd "C-c C-s") 'helm-css-scss))
 (add-hook 'css-mode-hook 'remfils/helm-css-hook)
 
 (global-set-key (kbd "C-c p s w") 'helm-multi-swoop-projectile)
@@ -87,7 +84,7 @@
 ;; special js hook
 
 (defun remfils/hotkeys-js2-mode-hook ()
-  (define-key js2-mode-map (kbd "M-j") 'backward-char)
+  ;; (define-key js2-mode-map (kbd "M-j") 'backward-char)
   (define-key js2-mode-map (kbd "C-c C-p") 'js-comint-repl)
   (define-key js2-mode-map (kbd "C-c C-r") 'js-comint-send-region)
   (define-key js2-mode-map (kbd "C-c C-c") 'js-comint-send-buffer))
@@ -95,13 +92,15 @@
 (add-hook 'js2-mode-hook 'remfils/hotkeys-js2-mode-hook)
 
 (defun remfils/hotkeys-diff-mode-hook ()
-  (define-key diff-mode-map (kbd "M-j") 'backward-char)
-  (define-key diff-mode-map (kbd "M-k") 'next-line))
+  ;; (define-key diff-mode-map (kbd "M-j") 'backward-char)
+  ;; (define-key diff-mode-map (kbd "M-k") 'next-line)
+  )
 
 (add-hook 'diff-mode-hook 'remfils/hotkeys-diff-mode-hook)
 
 (defun remfils/hotkeys-matlab-mode-hook ()
-  (define-key matlab-mode-map (kbd "M-j") 'backward-char))
+  ;; (define-key matlab-mode-map (kbd "M-j") 'backward-char)
+  )
 
 (add-hook 'matlab-mode-hook 'remfils/hotkeys-matlab-mode-hook)
 
@@ -135,6 +134,11 @@
 (defun remfils/omnisharp-keys-hook ()
   (define-key csharp-mode-map (kbd "<f12>") 'omnisharp-go-to-definition))
 (add-hook 'csharp-mode-hook 'remfils/omnisharp-keys-hook)
+
+;; ominisharp
+(defun remfils/hotkeys-omnisharp-mode-hook()
+  (define-key omnisharp-mode-map (kbd "<f12>") 'omnisharp-go-to-definition)
+  (define-key omnisharp-mode-map (kbd "S-<f12>") 'omnisharp-go-to-definition-other-window))
 
 (provide 'remfils-init-hotkeys)
 ;;; remfils-init-hotkeys.el ends here
