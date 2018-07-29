@@ -83,6 +83,17 @@
 ;;; hotkeys
 
 
+(defun remfils/lsp-php-enable()
+  (require 'lsp-php)
+  (when (equal system-type 'windows-nt)
+    (setq lsp-php-language-server-command '("php-language-server.php.bat")))
+  (lsp-define-tcp-client lsp-tcp-php "php"
+                         'lsp-php-get-root
+                         (lsp-php-get-language-server-command)
+                         "127.0.0.1"
+                         49621
+                         :ignore-regexps (lsp-php-get-ignore-regexps))
+  (lsp-php-enable))
 
 (provide 'remfils-web-dev)
 ;;; remfils-web-dev.el ends here
