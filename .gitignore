@@ -38,3 +38,4 @@ games/
 .omnisharp/1.*/*
 /indium-workspaces.el
 /geben/
+.omnisharp/
