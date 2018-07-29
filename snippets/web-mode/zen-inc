@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Zen Include
+# key: zen-inc
+# --
+{%
+  include "@$1/components/$2/$2.twig" with {
+    content: content
+  } only
+%}
