@@ -9,12 +9,12 @@
 (global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-]") 'forward-paragraph)
 
-;; (global-set-key (kbd "M-u") 'backward-word)
-;; (global-set-key (kbd "M-o") 'forward-to-word-begin)
-;; (define-key prelude-mode-map (kbd "M-o") 'forward-to-word-begin)
+(global-set-key (kbd "M-u") 'backward-word)
+(global-set-key (kbd "M-o") 'forward-to-word-begin)
+(define-key prelude-mode-map (kbd "M-o") 'forward-to-word-begin)
+(global-set-key (kbd "M-U") 'backward-to-word-end)
+(global-set-key (kbd "M-O") 'forward-word)
 ;(define-key c-mode-map (kbd "M-j") 'backward-char)
-;; (global-set-key (kbd "M-U") 'backward-to-word-end)
-;; (global-set-key (kbd "M-O") 'forward-word)
 
 ;; this should not be neccecary
 ; (global-set-key (kbd "M-'") 'comment-or-uncomment-region)
