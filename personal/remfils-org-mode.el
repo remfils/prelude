@@ -23,6 +23,8 @@
   (setq cloud-path "d:/Downloads/YandexDisk/"))
 (setq org-agenda-files (mapcar '(lambda (x) (concat cloud-path x)) org-agenda-files))
 
+(setq org-agenda-files '("~/.org/t.org"))
+
 ;; CAPTURE
 
 (global-set-key (kbd "C-c c") 'org-capture)

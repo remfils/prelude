@@ -7,6 +7,7 @@
         c-electric-brace
         c-electric-delete-forward
         c-electric-paren
+        c-electric-pound
         c-electric-semi&comma
         c-electric-slash
         c-electric-star
@@ -30,6 +31,7 @@
         helm-show-kill-ring
         ignore
         indent-for-tab-command
+        insert-register
         kill-region
         nxml-electric-slash
         org-cycle
