@@ -87,5 +87,7 @@
   (let ((fill-column (point-max)))
     (fill-region (region-beginning) (region-end) nil)))
 
+(setq org-babel-python-command "python3")
+
 (provide 'remfils-org-mode)
 ;;; remfils-org-mode.el ends here
