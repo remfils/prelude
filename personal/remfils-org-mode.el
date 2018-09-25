@@ -41,6 +41,8 @@
         ("l" "Local journal" entry (file+datetree (concat org-directory "/local-j.org"))
          "* %T\n%?")
         ("c" "Code" entry (file+headline (concat org-directory "/code.org") "ОБЩЕЕ")
+         "* %T\n%?")
+        ("p" "Physics" entry (file+headline (concat org-directory "/phys.org") "МАТЕМАТИКА")
          "* %T\n%?")))
 
 (org-babel-do-load-languages
