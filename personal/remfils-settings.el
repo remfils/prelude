@@ -103,5 +103,9 @@
 ;; company delay
 (setq company-idle-delay 0.1)
 
+;; windows tramp
+(when (eq window-system 'w32)
+  (setq tramp-default-method "plink"))
+
 (provide 'remfils-settings)
 ;;; remfils-settings.el ends here
