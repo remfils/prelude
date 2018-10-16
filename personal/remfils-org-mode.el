@@ -44,7 +44,7 @@
          "* %T\n%?")))
 
 (org-babel-do-load-languages
- 'org-babel-load-languages '((sh . t) (python . t) (perl . t)))
+ 'org-babel-load-languages '((shell . t) (python . t) (perl . t)))
 
 (setq org-odt-category-map-alist
       '(("__Figure__" "Изображение" "value" "Изображение" org-odt--enumerable-image-p)))
