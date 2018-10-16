@@ -112,7 +112,7 @@
       (avy-goto-subword-1 char)
     (avy-goto-word-1 char)))
 
-(global-set-key (kbd "C-c j") 'remfils/avy-goto-word-or-subword-1)
+; (global-set-key (kbd "C-c j") 'remfils/avy-goto-word-or-subword-1)
 
 
 
