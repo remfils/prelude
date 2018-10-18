@@ -30,18 +30,22 @@
 (global-set-key (kbd "C-c c") 'org-capture)
 
 (setq org-directory "~/.org")
+(when (equal system-type 'windows-nt)
+  (setq org-directory "c:/Home/.org"))
 
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline (concat org-directory "/t.org") "Общее")
+      `(("t" "Todo" entry (file+headline ,(concat org-directory "/t.org") "Общее")
          "* TODO %?\n %T\n %a")
-        ("j" "Journal" entry (file+datetree (concat org-directory "/j.org"))
+        ("j" "Journal" entry (file+datetree ,(concat org-directory "/j.org"))
          "* %T\n%?")
-        ("l" "Local journal" entry (file+datetree (concat org-directory "/local-j.org"))
+        ("l" "Local journal" entry (file+datetree ,(concat org-directory "/local-j.org"))
          "* %T\n%?")
-        ("c" "Code" entry (file+headline (concat org-directory "/code.org") "ОБЩЕЕ")
+        ("c" "Code" entry (file+headline ,(concat org-directory "/code.org") "ОБЩЕЕ")
          "* %T\n%?")))
+
+(print org-capture-templates)
 
 (org-babel-do-load-languages
  'org-babel-load-languages '((shell . t) (python . t) (perl . t)))
