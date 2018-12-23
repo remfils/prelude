@@ -31,7 +31,7 @@
 
 (setq org-directory "~/.org")
 (when (equal system-type 'windows-nt)
-  (setq org-directory "c:/Home/.org")
+  ;(setq org-directory "c:/Home/.org")
   (setq org-babel-python-command "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe"))
 
 (setq org-default-notes-file (concat org-directory "/notes.org"))
