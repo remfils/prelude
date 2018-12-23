@@ -49,6 +49,7 @@
         python-indent-dedent-line
         sp-backward-delete-char
         sp-backward-kill-word
+        upcase-region
         yaml-electric-backspace
         yaml-electric-dash-and-dot
         yas-expand
