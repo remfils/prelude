@@ -16,14 +16,20 @@
 (setq org-log-done t)
 
 (setq org-agenda-files
-      (list "documents/org/tasks.org"))
+      (list
+       "org/t.org"
+       "org/work.org"
+       "org/univer.org"
+       ))
 
-(setq cloud-path "/media/D/Downloads/YandexDisk/")
-(when (equal system-type 'windows-nt)
-  (setq cloud-path "d:/Downloads/YandexDisk/"))
-(setq org-agenda-files (mapcar '(lambda (x) (concat cloud-path x)) org-agenda-files))
+(setq org-agenda-files
+      (mapcar '(lambda (x) (concat cloud-path x)) org-agenda-files))
 
-(setq org-agenda-files '("~/.org/t.org"))
+
+(let ((org-super-agenda-groups
+       '((:auto-category t))))
+  (org-agenda-list))
+
 
 ;; CAPTURE
 
@@ -39,14 +45,16 @@
 (setq org-capture-templates
       `(("t" "Todo" entry (file+headline ,(concat org-directory "/t.org") "Общее")
          "* TODO %?\n %T\n %a")
+        ("w" "Todo" entry (file+headline ,(concat cloud-path "org/work.org") "Общее")
+         "* TODO %?\n %T")
+        ("u" "Todo" entry (file+headline ,(concat cloud-path "org/univer.org") "Общее")
+         "* TODO %?\n %T")
         ("j" "Journal" entry (file+datetree ,(concat org-directory "/j.org"))
          "* %T\n%?")
         ("l" "Local journal" entry (file+datetree ,(concat org-directory "/local-j.org"))
          "* %T\n%?")
         ("c" "Code" entry (file+headline ,(concat org-directory "/code.org") "ОБЩЕЕ")
          "* %T\n%?")))
-
-(print org-capture-templates)
 
 (org-babel-do-load-languages
  'org-babel-load-languages '((shell . t) (python . t) (perl . t)))
