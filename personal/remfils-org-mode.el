@@ -49,7 +49,7 @@
          "* TODO %?\n %T")
         ("u" "Todo" entry (file+headline ,(concat cloud-path "org/univer.org") "Общее")
          "* TODO %?\n %T")
-        ("j" "Journal" entry (file+datetree ,(concat org-directory "/j.org"))
+        ("j" "Journal" entry (file+datetree ,(concat cloud-path "org/j.org"))
          "* %T\n%?")
         ("l" "Local journal" entry (file+datetree ,(concat org-directory "/local-j.org"))
          "* %T\n%?")
@@ -69,8 +69,10 @@
       (save-excursion
         (color-org-header "$$$:" "black" "lightgreen")
         (color-org-header "work:" "tan" "SaddleBrown")
+        (color-org-header "сайт_" "tan" "SaddleBrown")
         (color-org-header "кукиит:" "bisque" "bisque4")
-        (color-org-header "асп:" "DeepSkyBlue" "white")
+        (cppolor-org-header "асп:" "DeepSkyBlue" "white")
+        (color-org-header "др:" "orange" "white")
         ))
 
 (defun color-org-header (tag backcolor forecolor)
