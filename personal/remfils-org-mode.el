@@ -71,7 +71,7 @@
         (color-org-header "work:" "tan" "SaddleBrown")
         (color-org-header "сайт_" "tan" "SaddleBrown")
         (color-org-header "кукиит:" "bisque" "bisque4")
-        (cppolor-org-header "асп:" "DeepSkyBlue" "white")
+        (color-org-header "асп:" "DeepSkyBlue" "white")
         (color-org-header "др:" "orange" "white")
         ))
 
