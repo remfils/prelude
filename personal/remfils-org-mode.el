@@ -36,9 +36,6 @@
 (global-set-key (kbd "C-c c") 'org-capture)
 
 (setq org-directory "~/.org")
-(when (equal system-type 'windows-nt)
-  ;(setq org-directory "c:/Home/.org")
-  (setq org-babel-python-command "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe"))
 
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
@@ -123,7 +120,14 @@
   (let ((fill-column (point-max)))
     (fill-region (region-beginning) (region-end) nil)))
 
-(setq org-babel-python-command "python3")
+
+;; python executables
+(when (equal system-type 'windows-nt)
+  (setq org-babel-python-command "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe"))
+
+(when (equal system-type 'gnu/linux)
+  (setq org-babel-python-command "python3"))
+
 
 (provide 'remfils-org-mode)
 ;;; remfils-org-mode.el ends here
