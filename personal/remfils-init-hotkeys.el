@@ -2,10 +2,6 @@
 
 (global-set-key (kbd "C-<tab>") 'yas/expand)
 
-;; (global-set-key (kbd "M-i") 'previous-line) ; was tab-to-tab-stop wasd
-;; (global-set-key (kbd "M-k") 'next-line) ; was kill-sentence
-;; (global-set-key (kbd "M-j") 'backward-char) ; was indent-new-comment-line
-;; (global-set-key (kbd "M-l") 'forward-char)
 (global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-]") 'forward-paragraph)
 
@@ -26,15 +22,6 @@
 (global-set-key (kbd "C-c C->") 'mc/mark-all-like-this)
 
 (global-set-key (kbd "<f8>") 'neotree-toggle)
-
-;; helm swoop
-
-;; (global-set-key (kbd "C-c C-s") 'helm-swoop)
-;; (defun remfils/helm-css-hook()
-;;   (define-key css-mode-map (kbd "C-c C-s") 'helm-css-scss))
-;; (add-hook 'css-mode-hook 'remfils/helm-css-hook)
-
-(global-set-key (kbd "C-c p s w") 'helm-multi-swoop-projectile)
 
 ;; undo
 
@@ -67,6 +54,14 @@
     ;; (define-key evil-motion-state-map (kbd "M-i") 'helm-swoop-from-evil-search)
     (define-key helm-swoop-map (kbd "M-i") 'helm-multi-swoop-all-from-helm-swoop)))
 
+;; (defun remfils/helm-css-hook()
+;;   (define-key css-mode-map (kbd "C-c C-s") 'helm-css-scss))
+;; (add-hook 'css-mode-hook 'remfils/helm-css-hook)
+
+(global-set-key (kbd "C-c p s w") 'helm-multi-swoop-projectile)
+
+
+
 ;; funcs
 
 (defun forward-to-word-begin()
@@ -91,18 +86,7 @@
 
 (add-hook 'js2-mode-hook 'remfils/hotkeys-js2-mode-hook)
 
-(defun remfils/hotkeys-diff-mode-hook ()
-  ;; (define-key diff-mode-map (kbd "M-j") 'backward-char)
-  ;; (define-key diff-mode-map (kbd "M-k") 'next-line)
-  )
-
 (add-hook 'diff-mode-hook 'remfils/hotkeys-diff-mode-hook)
-
-(defun remfils/hotkeys-matlab-mode-hook ()
-  ;; (define-key matlab-mode-map (kbd "M-j") 'backward-char)
-  )
-
-(add-hook 'matlab-mode-hook 'remfils/hotkeys-matlab-mode-hook)
 
 ;; avy fix
 
