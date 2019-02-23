@@ -88,18 +88,6 @@
 
 (add-hook 'diff-mode-hook 'remfils/hotkeys-diff-mode-hook)
 
-;; avy fix
-
-(defun remfils/avy-goto-word-or-subword-1 (arg char)
-  (interactive "P\ncchar:")
-  (if arg
-      (avy-goto-subword-1 char)
-    (avy-goto-word-1 char)))
-
-; (global-set-key (kbd "C-c j") 'remfils/avy-goto-word-or-subword-1)
-
-
-
 ;; evaluation function
 (defun remfils/eval-and-replace ()
   "Replace the preceding sexp with its value."
