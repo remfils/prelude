@@ -22,13 +22,15 @@
        "org/univer.org"
        ))
 
-(setq org-agenda-files
-      (mapcar '(lambda (x) (concat cloud-path x)) org-agenda-files))
 
+(when (boundp 'cloud-path)
+  (setq org-agenda-files
+        (mapcar '(lambda (x) (concat cloud-path x)) org-agenda-files))
 
-(let ((org-super-agenda-groups
-       '((:auto-category t))))
-  (org-agenda-list))
+  (let ((org-super-agenda-groups
+         '((:auto-category t))))
+    (org-agenda-list)))
+
 
 
 ;; CAPTURE
@@ -38,6 +40,9 @@
 (setq org-directory "~/.org")
 
 (setq org-default-notes-file (concat org-directory "/notes.org"))
+
+(when (not (boundp 'cloud-path))
+  (setq cloud-path org-directory))
 
 (setq org-capture-templates
       `(("t" "Todo" entry (file+headline ,(concat org-directory "/t.org") "Общее")
