@@ -9,8 +9,8 @@
 (require 'helm-exwm)
 (require 'exwm-config)
 
-(require 'exwm-systemtray)
-(exwm-systemtray-enable)
+;; (require 'exwm-systemtray)
+;; (exwm-systemtray-enable)
 
 (exwm-config-default)
 
@@ -40,3 +40,5 @@
                     (lambda (command)
                       (interactive (list (read-shell-command "$ ")))
                       (start-process-shell-command command nil command)))
+
+(global-set-key [remap other-window] 'other-window)
