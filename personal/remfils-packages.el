@@ -53,6 +53,7 @@
 ;; CUSTOM PACKAGES
 
 (load-file "~/.emacs.d/personal/packages/remfils-templater.el")
+(load-file "~/.emacs.d/personal/packages/remfils-org-img-mover.el")
 ;; (load-file "~/.emacs.d/personal/packages/remfils-redmine.el")
 
 ;; (load-file "~/.emacs.d/personal/packages/remfils-exwm.el")
