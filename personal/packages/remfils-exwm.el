@@ -30,11 +30,12 @@
    ([?\C-d] . delete)
    ([?\C-k] . (S-end delete))
    ;; cut/paste.
-   ([?\C-w] . ?\C-x)
+;   ([?\C-w] . ?\C-x)
    ([?\M-w] . ?\C-c)
    ([?\C-y] . ?\C-v)
    ;; search
-   ([?\C-s] . ?\C-f)))
+   ([?\C-s] . ?\C-f))
+ )
 
 (exwm-input-set-key (kbd "s-&")
                     (lambda (command)

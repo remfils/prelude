@@ -22,7 +22,6 @@
        "org/univer.org"
        ))
 
-
 (when (boundp 'cloud-path)
   (setq org-agenda-files
         (mapcar '(lambda (x) (concat cloud-path x)) org-agenda-files))
