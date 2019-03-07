@@ -1,0 +1,4 @@
+# key: +1c
+# name: 1C link
+# --
+e1cib/${1:$$(yas-completing-read "Type? " '("data" "list"))}/${2:$$(yas-completing-read "Type? " '("Документ" "Справочник" "РегистрНакопления" "РегистрСведений"))}.$0
