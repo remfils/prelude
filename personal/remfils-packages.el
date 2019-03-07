@@ -24,6 +24,9 @@
                             neotree
                             all-the-icons
 
+                            ;; testing pdf-tools
+                            pdf-tools
+
                             csharp-mode
                             omnisharp
                             indium
@@ -49,6 +52,9 @@
 (eval-after-load 'php-mode
   '(require 'php-ext))
 
+;; pdf-tools code
+(pdf-tools-install)
+(add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
 
 ;; CUSTOM PACKAGES
 
