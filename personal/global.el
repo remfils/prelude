@@ -29,6 +29,8 @@
 (setq gnus-dribble-directory
       `((".*" ,temporary-file-directory t)))
 
+;; dont highlight whitespace chars
+(setq prelude-whitespace nil)
 
 ;; projectils
 (add-to-list 'projectile-globally-ignored-directories "node_modules")
