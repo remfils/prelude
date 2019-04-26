@@ -2,7 +2,7 @@
 (require 's)
 
 (defun remfils/templater/csv-line-to-list (csv-string)
-  "TODO: parses line of text into list ignoring comas in quotes"
+  "parses line of text into list ignoring comas in quotes. "
   (let (result (csv-item "") (quote-counter 1))
     (dolist (csv-char (append csv-string nil) result)
       (cond
