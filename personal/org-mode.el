@@ -1,4 +1,4 @@
-(setq org-log-done 'note)
+(setq org-log-done 'time)
 
 (setq org-agenda-files
       (list
