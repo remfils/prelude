@@ -14,6 +14,9 @@
                             neotree
                             all-the-icons
 
+                            elpy
+                            ob-ipython
+
                             ;; testing pdf-tools
                             pdf-tools
 
@@ -30,9 +33,10 @@
 
 ;; CUSTOM PACKAGES
 
-;; (load-file "~/.emacs.d/personal/packages/remfils-templater.el")
-;; (load-file "~/.emacs.d/personal/packages/remfils-org-img-mover.el")
-(load-file "~/.emacs.d/personal/packages/remfils-crux.el")
 (load-file "~/.emacs.d/personal/packages/disable-mouse-mode.el")
+(load-file "~/.emacs.d/personal/packages/remfils-templater.el")
+(load-file "~/.emacs.d/personal/packages/remfils-crux.el")
+;; (load-file "~/.emacs.d/personal/packages/remfils-org-img-mover.el")
+(load-file "~/.emacs.d/personal/packages/remfils-python.el")
 
 (provide 'prelude-modules)
