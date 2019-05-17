@@ -17,7 +17,6 @@
                             elpy
                             ob-ipython
 
-                            ;; testing pdf-tools
                             pdf-tools
 
                             csharp-mode
