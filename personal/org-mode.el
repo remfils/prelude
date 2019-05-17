@@ -27,6 +27,8 @@
          "* TODO %?\n %T\n %a")
         ("w" "Todo work" entry (file+headline ,(concat cloud-path "org/work.org") "Общее")
          "* TODO %?\n %T")
+        ("r" "Work Report" entry (file+datetree ,(concat cloud-path "org/work-report.org"))
+         "* %T %?")
         ("u" "Todo univer" entry (file+headline ,(concat cloud-path "org/univer.org") "Общее")
          "* TODO %?\n %T")
         ("j" "Journal" entry (file+datetree ,(concat cloud-path "org/j.org"))
