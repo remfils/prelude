@@ -40,11 +40,13 @@
         ("c" "Code" entry (file+headline ,(concat org-directory "/code.org") "ОБЩЕЕ")
          "* %T\n%?")))
 
-(cond (equal system-type 'windows-nt)
+(when (equal system-type 'windows-nt)
       (org-babel-do-load-languages
-       'org-babel-load-languages '((shell . t) (python . t) (perl . t) (sql . t)))
-      (org-babel-do-load-languages
-       'org-babel-load-languages '((shell . t) (python . t) (perl . t) (sql . t) (ipython . t))))
+       'org-babel-load-languages '((shell . t) (python . t) (perl . t) (sql . t))))
+
+(when (equal system-type 'gnu/linux)
+  (org-babel-do-load-languages
+   'org-babel-load-languages '((shell . t) (python . t) (perl . t) (sql . t) (ipython . t))))
 
 (setq org-odt-category-map-alist
       '(("__Figure__" "Изображение" "value" "Изображение" org-odt--enumerable-image-p)))
