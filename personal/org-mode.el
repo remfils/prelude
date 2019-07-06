@@ -2,9 +2,10 @@
 
 (setq org-agenda-files
       (list
-       "org/t.org"
+       "org/tasks.org"
        "org/work.org"
-       "org/univer.org"
+       "org/univer.org",
+       "org/periodic.org"
        ))
 
 (when (boundp 'cloud-path)
@@ -23,17 +24,17 @@
 
 
 (setq org-capture-templates
-      `(("t" "Todo" entry (file+headline ,(concat cloud-path "org/t.org") "Общее")
+      `(("t" "Todo" entry (file+headline ,(concat cloud-path "org/tasks.org") "Общее")
          "* TODO %?\n %T\n %a")
         ("w" "Todo work" entry (file+headline ,(concat cloud-path "org/work.org") "Общее")
          "* TODO %?\n %T")
-        ("r" "Work Report" entry (file+datetree ,(concat cloud-path "org/work-report.org"))
+        ("r" "Work Report" entry (file+datetree ,(concat cloud-path "org/reports/work-report.org"))
          "* %T %?")
         ("u" "Todo univer" entry (file+headline ,(concat cloud-path "org/univer.org") "Общее")
          "* TODO %?\n %T")
-        ("j" "Journal" entry (file+datetree ,(concat cloud-path "org/j.org"))
+        ("j" "Journal" entry (file+datetree ,(concat cloud-path "org/journal/j.org"))
          "* %T\n%?")
-        ("n" "Work notes" entry (file+datetree ,(concat cloud-path "org/notes.org"))
+        ("n" "Work notes" entry (file+datetree ,(concat cloud-path "org/notes/notes.org"))
          "* %T\n%?")
         ("l" "Local journal" entry (file+datetree ,(concat org-directory "/local-j.org"))
          "* %T\n%?")
