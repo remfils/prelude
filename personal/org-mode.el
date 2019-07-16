@@ -4,7 +4,7 @@
       (list
        "org/tasks.org"
        "org/work.org"
-       "org/univer.org",
+       "org/univer.org"
        "org/periodic.org"
        ))
 
