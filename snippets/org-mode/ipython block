@@ -1,6 +1,6 @@
 # key: <py
 # name: ipython block
 # --
-#+BEGIN_SRC ipython :session :exports both :results raw drawer
+#+BEGIN_SRC ein-python :session localhost :results raw drawer
 $0
 #+END_SRC

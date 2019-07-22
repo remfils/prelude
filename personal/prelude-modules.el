@@ -19,6 +19,8 @@
 
                             pdf-tools
 
+                            ein
+
                             csharp-mode
                             omnisharp
 
