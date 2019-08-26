@@ -2,15 +2,15 @@
 
 (setq org-agenda-files
       (list
-       "org/tasks.org"
-       "org/work.org"
-       "org/univer.org"
-       "org/periodic.org"
+       "tasks.org"
+       "work.org"
+       "univer.org"
+       "periodic.org"
        ))
 
-(when (boundp 'cloud-path)
+(when (boundp 'sync-org-path)
   (setq org-agenda-files
-        (mapcar '(lambda (x) (concat cloud-path x)) org-agenda-files))
+        (mapcar '(lambda (x) (concat sync-org-path x)) org-agenda-files))
 
   (let ((org-super-agenda-groups
          '((:auto-category t))))
@@ -24,17 +24,17 @@
 
 
 (setq org-capture-templates
-      `(("t" "Todo" entry (file+headline ,(concat cloud-path "org/tasks.org") "Общее")
+      `(("t" "Todo" entry (file+headline ,(concat sync-org-path "tasks.org") "Общее")
          "* TODO %?\n %T\n %a")
-        ("w" "Todo work" entry (file+headline ,(concat cloud-path "org/work.org") "Общее")
+        ("w" "Todo work" entry (file+headline ,(concat sync-org-path "work.org") "Общее")
          "* TODO %?\n %T")
-        ("r" "Work Report" entry (file+datetree ,(concat cloud-path "org/reports/work-report.org"))
+        ("r" "Work Report" entry (file+datetree ,(concat sync-org-path "reports/work-report.org"))
          "* %T %?")
-        ("u" "Todo univer" entry (file+headline ,(concat cloud-path "org/univer.org") "Общее")
+        ("u" "Todo univer" entry (file+headline ,(concat sync-org-path "univer.org") "Общее")
          "* TODO %?\n %T")
-        ("j" "Journal" entry (file+datetree ,(concat cloud-path "org/journal/j.org"))
+        ("j" "Journal" entry (file+datetree ,(concat sync-org-path "journal/j.org"))
          "* %T\n%?")
-        ("n" "Work notes" entry (file+datetree ,(concat cloud-path "org/notes/notes.org"))
+        ("n" "Work notes" entry (file+datetree ,(concat sync-org-path "notes/notes.org"))
          "* %T\n%?")
         ("l" "Local journal" entry (file+datetree ,(concat org-directory "/local-j.org"))
          "* %T\n%?")
