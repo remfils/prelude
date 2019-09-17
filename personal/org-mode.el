@@ -26,13 +26,13 @@
 
 (setq org-capture-templates
       `(("t" "Todo" entry (file+headline ,(concat sync-org-path "tasks.org") "Общее")
-         "* TODO %?\n %T\n %a")
+         "* TODO %?\n   SCHEDULED: %T")
         ("w" "Todo work" entry (file+headline ,(concat sync-org-path "work.org") "Общее")
-         "* TODO %?\n %T")
+         "* TODO %?\n   SCHEDULED: %T")
+        ("u" "Todo univer" entry (file+headline ,(concat sync-org-path "univer.org") "Общее")
+         "* TODO %?\n   SCHEDULED: %T")
         ("r" "Work Report" entry (file+datetree ,(concat sync-org-path "reports/work-report.org"))
          "* %T %?")
-        ("u" "Todo univer" entry (file+headline ,(concat sync-org-path "univer.org") "Общее")
-         "* TODO %?\n %T")
         ("j" "Journal" entry (file+datetree ,(concat sync-org-path "journal/j.org"))
          "* %T\n%?")
         ("n" "Work notes" entry (file+datetree ,(concat sync-org-path "notes/notes.org"))
