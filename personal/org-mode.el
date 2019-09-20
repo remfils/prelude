@@ -7,6 +7,7 @@
        "univer.org"
        "periodic.org"
        "reading.org"
+       "phys.org"
        ))
 
 (when (boundp 'sync-org-path)
