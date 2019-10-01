@@ -1,10 +1,10 @@
 
 ;; numbers
-(global-linum-mode 1)
-(setq linum-format " %3d")
+(global-linum-mode 0)
+;(setq linum-format " %3d")
 
-(set-face-attribute 'linum nil :height 100)
-(setq visible-bell 1)
+;(set-face-attribute 'linum nil :height 100)
+;(setq visible-bell 1)
 
 ;; yas
 (yas-global-mode 1)

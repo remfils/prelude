@@ -5,25 +5,20 @@
   '(require 'php-ext))
 
 (prelude-require-packages '(multiple-cursors
-                            linum
+                            ;linum
                             ggtags
                             helm-swoop
                             web-beautify
                             rainbow-delimiters
                             rainbow-mode
-                            neotree
-                            all-the-icons
-
+                            ;neotree
+                            ;all-the-icons
                             elpy
                             ob-ipython
-
                             pdf-tools
-
                             ein
-
                             csharp-mode
-                            omnisharp
-
+                            ;omnisharp
                             ledger-mode
                             yasnippet))
 
