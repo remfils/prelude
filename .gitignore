@@ -38,3 +38,7 @@ games/
 /indium-workspaces.el
 /geben/
 .omnisharp/
+elpy
+request
+transient
+/.org-id-locations
