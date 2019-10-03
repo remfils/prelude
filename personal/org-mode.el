@@ -62,5 +62,13 @@
 (when (equal system-type 'gnu/linux)
   (setq org-babel-python-command "python3"))
 
+;; agenda
+
+(org-add-agenda-custom-command
+ '("*" "Schedule unscheduled"
+   ((todo ""
+          ((org-agenda-skip-function '(org-agenda-skip-subtree-if 'scheduled))
+           (org-agenda-overriding-header "To schedule: ")))
+    (agenda ""))))
 
 (provide 'org-mode)
