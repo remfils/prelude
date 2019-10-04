@@ -26,3 +26,9 @@
 (global-set-key (kbd "C-c c") 'org-capture)
 (global-set-key (kbd "M-Q") 'remfils/unfill-paragraph)
 
+
+;; pdf-tools
+
+(define-key pdf-view-mode-map (kbd "h") 'pdf-annot-add-highlight-markup-annotation)
+(define-key pdf-view-mode-map (kbd "t") 'pdf-annot-add-text-annotation)
+(define-key pdf-view-mode-map (kbd "D") 'pdf-annot-delete)
