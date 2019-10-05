@@ -42,3 +42,4 @@ elpy
 request
 transient
 /.org-id-locations
+/.python-environments/*
