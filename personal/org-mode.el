@@ -54,13 +54,14 @@
 (setq org-odt-category-map-alist
       '(("__Figure__" "Изображение" "value" "Изображение" org-odt--enumerable-image-p)))
 
-
+;; should be configured in the OS to use python !
+;;
 ;; python executables
-(when (equal system-type 'windows-nt)
-  (setq org-babel-python-command "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe"))
+;; (when (equal system-type 'windows-nt)
+;;   (setq org-babel-python-command "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe"))
 
-(when (equal system-type 'gnu/linux)
-  (setq org-babel-python-command "python3"))
+;; (when (equal system-type 'gnu/linux)
+;;   (setq org-babel-python-command "python3"))
 
 ;; agenda
 
@@ -70,5 +71,19 @@
           ((org-agenda-skip-function '(org-agenda-skip-subtree-if 'scheduled))
            (org-agenda-overriding-header "To schedule: ")))
     (agenda ""))))
+
+
+;;set colours for org-mode
+
+(setq org-priority-faces '((?A . (:foreground "#F0DFAF" :weight bold))
+                           (?B . (:foreground "LightSteelBlue"))
+                           (?C . (:foreground "OliveDrab"))))
+
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "WAIT(w!)" "|" "DONE(d!)" "CANCELED(c!)")))
+
+(setq org-todo-keyword-faces
+      '(("TODO" . org-warning) ("WAIT" . "orange")
+        ("CANCELED" . (:foreground "#ffb6b2" :weight bold))))
 
 (provide 'org-mode)
