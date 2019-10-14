@@ -9,6 +9,7 @@
                             ggtags
                             helm-swoop
                             web-beautify
+			    org
                             rainbow-delimiters
                             rainbow-mode
                             ;neotree
