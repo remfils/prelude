@@ -73,17 +73,4 @@
     (agenda ""))))
 
 
-;;set colours for org-mode
-
-(setq org-priority-faces '((?A . (:foreground "#F0DFAF" :weight bold))
-                           (?B . (:foreground "LightSteelBlue"))
-                           (?C . (:foreground "OliveDrab"))))
-
-(setq org-todo-keywords
-      '((sequence "TODO(t)" "WAIT(w!)" "|" "DONE(d!)" "CANCELED(c!)")))
-
-(setq org-todo-keyword-faces
-      '(("TODO" . org-warning) ("WAIT" . "orange")
-        ("CANCELED" . (:foreground "#ffb6b2" :weight bold))))
-
 (provide 'org-mode)

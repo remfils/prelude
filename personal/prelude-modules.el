@@ -36,4 +36,22 @@
 ;; (load-file "~/.emacs.d/personal/packages/remfils-org-img-mover.el")
 (load-file "~/.emacs.d/personal/packages/remfils-python.el")
 
+
+;; org mode priority
+
+;;set colours for org-mode
+
+(setq org-priority-faces '((?A . (:foreground "#F0DFAF" :weight bold))
+                           (?B . (:foreground "LightSteelBlue"))
+                           (?C . (:foreground "OliveDrab"))))
+
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "WAIT(w!)" "|" "DONE(d!)" "CANCELED(c!)")))
+
+(setq org-todo-keyword-faces
+      '(("TODO" . org-warning) ("WAIT" . "orange")
+        ("CANCELED" . (:foreground "#ffb6b2" :weight bold))))
+
+
+
 (provide 'prelude-modules)
