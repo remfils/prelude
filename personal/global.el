@@ -17,8 +17,7 @@
 
 ;; UI
 
-(when (display-graphic-p)
-  (scroll-bar-mode -1))
+(scroll-bar-mode -1)
 
 (setq neo-theme 'icons)
 

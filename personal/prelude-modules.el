@@ -24,10 +24,10 @@
                             yasnippet))
 
 ;; pdf-tools
-(when (display-graphic-p)
-  (pdf-tools-install)
-  (add-hook 'pdf-view-mode-hook (lambda()
-                                  (linum-mode -1))))
+(pdf-tools-install)
+(add-hook 'pdf-view-mode-hook (lambda()
+                                (linum-mode -1)))
+
 
 ;; CUSTOM PACKAGES
 
