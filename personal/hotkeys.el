@@ -29,8 +29,9 @@
 
 ;; pdf-tools
 
-(define-key pdf-view-mode-map (kbd "h") 'pdf-annot-add-highlight-markup-annotation)
-(define-key pdf-view-mode-map (kbd "t") 'pdf-annot-add-text-annotation)
-(define-key pdf-view-mode-map (kbd "u") 'pdf-annot-add-underline-markup-annotation)
-(define-key pdf-view-mode-map (kbd "s") 'pdf-annot-add-squiggly-markup-annotation)
-(define-key pdf-view-mode-map (kbd "D") 'pdf-annot-delete)
+(when (display-graphic-p)
+  (define-key pdf-view-mode-map (kbd "h") 'pdf-annot-add-highlight-markup-annotation)
+  (define-key pdf-view-mode-map (kbd "t") 'pdf-annot-add-text-annotation)
+  (define-key pdf-view-mode-map (kbd "u") 'pdf-annot-add-underline-markup-annotation)
+  (define-key pdf-view-mode-map (kbd "s") 'pdf-annot-add-squiggly-markup-annotation)
+  (define-key pdf-view-mode-map (kbd "D") 'pdf-annot-delete))

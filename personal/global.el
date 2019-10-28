@@ -17,7 +17,9 @@
 
 ;; UI
 
-(scroll-bar-mode -1)
+(when (display-graphic-p)
+  (scroll-bar-mode -1))
+
 (setq neo-theme 'icons)
 
 ;; backups
