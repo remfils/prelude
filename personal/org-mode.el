@@ -1,5 +1,7 @@
 (setq org-log-done 'time)
 
+(setq default-input-method "russian-computer")
+
 (setq org-agenda-files
       (list
        "tasks.org"
