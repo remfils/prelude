@@ -21,7 +21,9 @@
                             csharp-mode
                             ;omnisharp
                             ledger-mode
-                            yasnippet))
+                            yasnippet
+                            openwith
+                            ))
 
 ;; pdf-tools
 (pdf-tools-install)
