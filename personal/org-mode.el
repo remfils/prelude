@@ -2,6 +2,8 @@
 
 (setq default-input-method "russian-computer")
 
+(setq ispell-local-dictionary "ru")
+
 (setq org-agenda-files
       (list
        "tasks.org"
