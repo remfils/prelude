@@ -10,7 +10,8 @@
        ;; linux
        ((string-equal system-type "gnu/linux") ; linux
         '(("writer" . "libreoffice")
-          ("calc" . "libreoffice"))
+          ("calc" . "libreoffice")
+          ("movie" . "vlc"))
         )))
 
 (setq openwith-associations
@@ -22,6 +23,10 @@
        (list (openwith-make-extension-regexp
               '("xls" "xlsx" "ods"))
              (cdr (assoc "calc" remfils/programs))
+             '(file))
+       (list (openwith-make-extension-regexp
+              '("mp4" "avi"))
+             (cdr (assoc "movie" remfils/programs))
              '(file))
        ))
 
