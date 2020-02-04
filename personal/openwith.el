@@ -5,7 +5,8 @@
        ;; windows
        ((string-equal system-type "windows-nt")
         '(("writer" . "C:\\Program Files\\LibreOffice\\program\\swriter.exe")
-          ("calc" . "C:\\Program Files\\LibreOffice\\program\\scalc.exe"))
+          ("calc" . "C:\\Program Files\\LibreOffice\\program\\scalc.exe")
+          ("movie" . "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe"))
         )
        ;; linux
        ((string-equal system-type "gnu/linux") ; linux
