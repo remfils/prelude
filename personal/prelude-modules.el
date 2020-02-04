@@ -5,7 +5,8 @@
   '(require 'php-ext))
 
 (prelude-require-packages '(multiple-cursors
-                            ;linum
+                                        ;linum
+                            emmet-mode
                             ggtags
                             helm-swoop
                             web-beautify
