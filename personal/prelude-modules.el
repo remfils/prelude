@@ -30,6 +30,8 @@
 (pdf-tools-install)
 (add-hook 'pdf-view-mode-hook (lambda()
                                 (linum-mode -1)))
+;; fixing multiple edits to pdfs (highlights)
+(setq super-save-exclude '(".pdf" ".gpg"))
 
 
 ;; CUSTOM PACKAGES
