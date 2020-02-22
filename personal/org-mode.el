@@ -1,3 +1,9 @@
+;; reqires sync-org-path variable
+;; Example: (setq sync-org-path "~/Documents/SyncOrg/")
+
+;; additional custom-org-agenda-files variable can be defined, to add
+;; custom files that are not synced
+
 (setq org-log-done 'time)
 
 (setq default-input-method "russian-computer")
@@ -17,6 +23,9 @@
 (when (boundp 'sync-org-path)
   (setq org-agenda-files
         (mapcar '(lambda (x) (concat sync-org-path x)) org-agenda-files))
+
+  (when (boundp 'custom-org-agenda-files)
+    (append org-agenda-files custom-org-agenda-files))
 
   (let ((org-super-agenda-groups
          '((:auto-category t))))
@@ -76,5 +85,7 @@
            (org-agenda-overriding-header "To schedule: ")))
     (agenda ""))))
 
+;; open source code in current window
+(setq org-src-window-setup 'current-window)
 
 (provide 'org-mode)
