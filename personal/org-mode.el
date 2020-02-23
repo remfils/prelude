@@ -10,23 +10,23 @@
 
 (setq ispell-local-dictionary "ru")
 
-(setq org-agenda-files
+;; add sync org files
+(let
+    ((org-agenda-files
       (list
        "tasks.org"
        "work.org"
        "univer.org"
        "periodic.org"
        "reading.org"
-       "goals.org"
-       ))
-
-(when (boundp 'sync-org-path)
-  (setq org-agenda-files
-        (mapcar '(lambda (x) (concat sync-org-path x)) org-agenda-files))
-
+       "goals.org")))
+  (when (boundp 'sync-org-path)
+    (setq org-agenda-files
+          (mapcar '(lambda (x) (concat sync-org-path x)) org-agenda-files)))
+  ;; add custom files
   (when (boundp 'custom-org-agenda-files)
-    (append org-agenda-files custom-org-agenda-files))
-
+    (setq org-agenda-files (append org-agenda-files custom-org-agenda-files)))
+  ;; code
   (let ((org-super-agenda-groups
          '((:auto-category t))))
     (org-agenda-list)))
