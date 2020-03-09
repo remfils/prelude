@@ -18,7 +18,6 @@
        "work.org"
        "univer.org"
        "periodic.org"
-       "reading.org"
        "goals.org")))
   (when (boundp 'sync-org-path)
     (setq org-agenda-files
