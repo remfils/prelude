@@ -12,7 +12,7 @@
 
 ;; add sync org files
 (let
-    ((org-agenda-files
+    ((my-org-agenda-files
       (list
        "tasks.org"
        "work.org"
@@ -21,7 +21,7 @@
        "goals.org")))
   (when (boundp 'sync-org-path)
     (setq org-agenda-files
-          (mapcar '(lambda (x) (concat sync-org-path x)) org-agenda-files)))
+          (mapcar '(lambda (x) (concat sync-org-path x)) my-org-agenda-files)))
   ;; add custom files
   (when (boundp 'custom-org-agenda-files)
     (setq org-agenda-files (append org-agenda-files custom-org-agenda-files)))
