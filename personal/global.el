@@ -40,6 +40,7 @@
 
 ;; python cyrylic in term fix
 (when (equal system-type 'windows-nt)
+  (prefer-coding-system 'utf-8)
   (setenv "PYTHONIOENCODING" "utf-8"))
 
 ;; windows tramp
